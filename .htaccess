@@ -1,0 +1,11 @@
+
+DirectoryIndex  index.php?lang=default
+
+
+ErrorDocument 404 http://localhost/rimpido.com/pagenotfound.php
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} ^/404/$
+RewriteRule ^(.*)$ <YourRelativePathToPHPFile>/pagenotfound.php [L]
